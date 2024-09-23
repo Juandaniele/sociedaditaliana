@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000; /* Fondo negro */
+  --foreground: #ffffff; /* Texto blanco */
 }
 
 body {
@@ -23,5 +16,24 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .card {
+    @apply p-6 bg-black border border-gray-700 rounded-lg shadow-lg hover:shadow-red-500 transition-shadow;
+  }
+
+  .highlight {
+    background: linear-gradient(to right, #008C45, #FFFFFF, #CD212A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+
+  .nav-bg {
+    @apply bg-black p-4 flex items-center;
+  }
+
+  .footer-bg {
+    @apply bg-black;
   }
 }
