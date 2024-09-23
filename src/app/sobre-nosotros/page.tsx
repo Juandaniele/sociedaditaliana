@@ -7,18 +7,18 @@ export default function SobreNosotros() {
       <Navbar />
 
       {/* Contenido de la página */}
-      <main className="flex flex-col items-center py-12">
-        <h1 className="text-4xl font-bold mt-12">Sobre Nosotros</h1>
-        <p className="text-lg mt-4 max-w-2xl text-gray-400 text-center">
+      <main className="flex flex-col items-center py-12 px-4 sm:px-8 lg:px-16">
+        <h1 className="text-4xl sm:text-5xl font-bold mt-12 text-center">Sobre Nosotros</h1>
+        <p className="text-lg sm:text-xl mt-4 max-w-2xl text-gray-400 text-center">
           La Sociedad Italiana es un club con más de 100 años de historia en Villa del Rosario, promoviendo el deporte y la cultura a través de nuestras actividades. 
           Nuestro objetivo es crear un espacio donde la comunidad pueda reunirse, disfrutar de diversas disciplinas y celebrar nuestras tradiciones.
         </p>
         <div className="mt-8 max-w-3xl text-gray-400 text-center">
-          <p>
+          <p className="text-justify">
             A lo largo de los años, hemos visto crecer a generaciones de deportistas y entusiastas de la cultura. Nos enorgullece ser un punto de encuentro para todos, 
             sin importar la edad o el nivel de habilidad. 
           </p>
-          <p className="mt-4">
+          <p className="mt-4 text-justify">
             Te invitamos a ser parte de nuestra familia, participar en nuestras actividades y disfrutar de lo que la Sociedad Italiana tiene para ofrecer.
           </p>
         </div>

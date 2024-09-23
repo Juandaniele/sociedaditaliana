@@ -8,28 +8,28 @@ export default function Home() {
       <Navbar />
 
       {/* Header */}
-      <header className="w-full bg-black text-white py-8 text-center">
-        <h1 className="text-5xl font-bold">
+      <header className="w-full bg-black text-white py-8 text-center px-4 sm:px-8 lg:px-16">
+        <h1 className="text-4xl sm:text-5xl font-bold">
           <span className="text-green-600">Socie</span>
           <span className="text-white">dad Ita</span>
           <span className="text-red-600">liana</span>
         </h1>
-        <p className="text-xl mt-2">Club Social y Deportivo en Villa del Rosario, Córdoba</p>
+        <p className="text-lg sm:text-xl mt-2">Club Social y Deportivo en Villa del Rosario, Córdoba</p>
       </header>
 
       {/* Sección principal */}
-      <main className="flex flex-col items-center py-12">
+      <main className="flex flex-col items-center py-12 px-4 sm:px-8 lg:px-16">
         {/* Bienvenida */}
         <section className="text-center mb-12">
-          <h2 className="text-3xl font-semibold text-white">Bienvenido a Nuestro Club</h2>
-          <p className="text-lg mt-4 max-w-2xl text-gray-400">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-white">Bienvenido a Nuestro Club</h2>
+          <p className="text-base sm:text-lg mt-4 max-w-2xl text-gray-400">
             En Sociedad Italiana, ofrecemos una variedad de disciplinas deportivas y eventos sociales para toda la comunidad. ¡Únete a nosotros y sé parte de la familia!
           </p>
         </section>
 
         {/* Tabs de Disciplinas Deportivas */}
         <section className="w-full max-w-5xl mb-12">
-          <h3 className="text-2xl font-semibold text-white mb-6">Disciplinas Deportivas</h3>
+          <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6">Disciplinas Deportivas</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Cards de disciplinas */}
             <DisciplineCard
