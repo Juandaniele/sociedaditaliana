@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="nav-bg shadow-lg border-b-2 border-white">
+    <nav className="bg-[#36802d] shadow-lg border-b-1 border-white">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -102,4 +102,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

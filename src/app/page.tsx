@@ -1,5 +1,6 @@
 import Navbar from './NavBar';
 import DisciplineCard from './DisciplineCard'; // Asegúrate de que la ruta sea correcta
+import Carousel from './carousel/page'; // Asegúrate de que la ruta sea correcta
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
             En Sociedad Italiana, ofrecemos una variedad de disciplinas deportivas y eventos sociales para toda la comunidad. ¡Únete a nosotros y sé parte de la familia!
           </p>
         </section>
+
+        {/* Carrusel de imágenes */}
+        <Carousel />
 
         {/* Tabs de Disciplinas Deportivas */}
         <section className="w-full max-w-5xl mb-12">
@@ -66,7 +70,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="footer-bg w-full py-4 text-white text-center">
+        <footer className="bg-[#234d20] w-full py-4 text-white text-center">
           <p>&copy; 2024 Sociedad Italiana. Todos los derechos reservados.</p>
         </footer>
       </main>
