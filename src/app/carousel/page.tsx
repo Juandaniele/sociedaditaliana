@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import Image from "next/image";
 
 const images = [
   '/handball.jpeg',
@@ -12,7 +12,7 @@ const Carousel = () => {
   return (
     <div className="flex justify-center items-center space-x-4">
       {images.map((image, index) => (
-        <img 
+        <Image 
           key={index} 
           src={image} 
           alt={`Image ${index + 1}`} 
